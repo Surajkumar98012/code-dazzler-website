@@ -31,7 +31,7 @@
 
 .cartoon{
    margin-left: -100px;
-   margin-top: 250px;
+   margin-top: 180px;
 }
 
 .cartoon div {
@@ -39,7 +39,7 @@
   box-sizing: border-box;
 }
 .b {
-  border: 0.4vmin solid black;
+  border: 0.3vmin solid black;
 }
 
 .r {
@@ -54,7 +54,7 @@
 }
 
 .bubble {
-  width: 75%;
+  width: 65%;
   height: 45%;
   left: 60%;
   top: -35%;
@@ -62,7 +62,7 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  font-size: 3vmin;
+  font-size: 2.4vmin;
   background: #ffd;
   box-shadow: 0 -0.25vmin, 0 0.125vmin;
   font-family: "Comic Sans", "Comic Neue", sans-serif;
@@ -82,46 +82,22 @@
 
 .gif{
   transform: skew(-10deg);
-  margin-top: 100px;
+  margin-top: 60px;
   box-shadow: ;
 }
 #what{
   text-align: center;
-  padding-top: 130px;
-  background:#001E33;
-  border-radius:25px;
-  box-shadow: 3px 5px 8px rgba(225,105,152,0.8);
-  color:white;
-  margin: 8px;
+  padding-top: 110px;
+  margin: 5px;
 }
 #whats{
   text-align: center;
   padding:30px;
-  background:#001E33;
-  border-radius:25px;
-  box-shadow: 3px 5px 8px rgba(225,105,152,0.8);
-  color:white;
-  margin: 15px;
+  margin: 20px;
+  margin-top:80px;
+  padding-bottom: 120px;
 
 }
-
-
-
-/*.front{
-    position: absolute;
-    backface-visibility: hidden;
-
-}
-.back{
-  backface-visibility: hidden;
-  position: absolute;
-  transform: rotateY(180deg);
-  cursor: pointer;
-
-}*/
-
-
-
 
 
 
@@ -135,9 +111,9 @@
 .wrapper{
     height: 300px;
     width: 300px;
-/*    border: 1px solid black;*/
-    position: absolute;
-    margin: auto;
+    position:relative;
+    margin: 20px;
+    margin-top:140px;
     left: 0;
     right: 0;
     top: 0;
