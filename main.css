@@ -14,11 +14,11 @@
 
     }
     #navbar{
-       margin-right: 120px;
+       margin-right: 80px;
     }
     #navhead{
-     background:#001E33;
-     margin-top: 6px;
+     background:rgba(0, 30, 51,0.7);
+
     }
     #navhead>img{
       margin-left: 2%;
@@ -92,9 +92,9 @@
 }
 #whats{
   text-align: center;
-  padding:30px;
+  padding:10px;
   margin: 20px;
-  margin-top:80px;
+  margin-top:100px;
   padding-bottom: 120px;
 
 }
@@ -137,19 +137,22 @@
 
 }
 @keyframes spin {
-    100%{
-        transform: rotateY(360deg);
-    }
+  0%{
+    transform: rotate3d(0, 0, 0, 0);
+  }
+  100%{
+    transform: rotate3d(0, 1, 0, 360deg);
+  }
 }
 .image-cube div{
     height: 300px;
     width: 300px;
     position: absolute;
-    backface-visibility: hidden;
+
 }
 .image-cube>div>img{
     width: 100%;
-    background:#001E33;
+  background: rgba(2, 53, 77, 0.5);
 
 }
 .front{
@@ -166,16 +169,31 @@
     transform: rotateY(270deg) translateX(-150px);
     transform-origin: 0 50%;
 }
+.top{
+  transform: translateY(-150px)   rotateX(90deg);
+
+}
+.bottom{
+  transform: translateY(150px) rotateX(90deg);
+}
 
 
-.box{
+.boxm{
   text-align: center;
   border-radius: 5px;
   box-shadow: 3px 5px 8px rgba(0,0,0,0.8);
   padding-top: 35px;
   padding-bottom: 30px;
-  background: #02203c;
-  margin: 31px;
+  background :transparent;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  margin: 47px;
+}
+
+.boxm:hover{
+
+  box-shadow: 0 0px 100px #03a9f4;
+
 }
 
 .foot>a{
@@ -229,13 +247,13 @@
     transform: rotate(0deg) skew(0deg) translate(0, -10px);
 }
 .social-menu ul li:nth-child(1) a:hover {
-    background-color: #e4405f;
+    background-color:  #FF5722;
 }
 .social-menu ul li:nth-child(2) a:hover {
     background-color: #55acee;
 }
 .social-menu ul li:nth-child(3) a:hover {
-    background-color:  #3b5999;
+    background-color:#e4405f;
 }
 .social-menu ul li:nth-child(4) a:hover {
     background-color: #cd201f;
@@ -259,3 +277,125 @@ body::-webkit-scrollbar-thumb {
   /* creates padding around scroll thumb */
 }
 
+
+
+
+/*top section*/
+
+
+
+.containers {
+  display: grid;
+  place-items : center;
+  height: 100vh;
+}
+
+.glassmorphism {
+  width:auto;
+  height:auto;
+  position:relative;
+  margin-top: 30px;
+}
+.box {
+  background :rgba(255, 255, 255, 0.2);
+  margin: 50px;
+  padding: 30px;
+  width:auto;
+  border-radius: 15px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    font-family: sans-serif;
+}
+
+.box:hover{
+
+  box-shadow: 0 0px 100px #03a9f4;
+
+}
+
+
+.box h1 {
+  font-size: 100px;
+  text-align: right;
+  margin-top: 0;
+  color: transparent;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.box p {
+  font-size: 30px;
+  color: #fff;
+}
+
+.location {
+  color: #ddd;
+}
+.drop {
+  background: rpga(255,255,255,0.3);
+  border-radius: 10px;
+  border-left: 1px solid rgba(255,255,255,0.3);
+  border-top: 1px solid rgba(255,255,255,0.3);
+  box-shadow: 10px 10px 60px -8px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+
+}
+
+.drop-1{
+  height: 80px;
+  width: 80px;
+  top: 5px;
+  left: 8px;
+  z-index: 1;
+}
+
+.drop-2{
+  height: 100px;
+  width: 100px;
+  bottom: 250px;
+  left: -15px;
+  z-index: 1;
+}
+
+.drop-3{
+  height: 100px;
+  width: 100px;
+  bottom: 18.04px;
+  right: 25px;
+  z-index: 1;
+
+}
+
+.drop-4{
+  height: 80px;
+  width: 80px;
+  top: 5px;
+  right:25px;
+
+}
+
+.drop-4:hover{
+
+  box-shadow: 0 30px 24px #ff9800;
+
+}
+
+.drop-1:hover{
+
+  box-shadow: 0 30px 24px #ff9800;
+
+}
+
+.drop-3:hover{
+
+  box-shadow: 0 -30px 24px #03a9f4;
+
+}
+
+.drop-2:hover{
+
+  box-shadow: 0 30px 14px #06d2bf;
+
+}
